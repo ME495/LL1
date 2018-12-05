@@ -47,7 +47,7 @@ void dfs(string left)
             {
                 string tmp;
                 tmp+=right[i];
-                if(i<right.size()-1&&right[i]=='\'')
+                if(i<right.size()-1&&right[i+1]=='\'')
                     tmp+=right[++i];
                 dfs(tmp);
                 first[left].insert(first[tmp].begin(),first[tmp].end());
